@@ -22,6 +22,6 @@ export const mastra = new Mastra({
     level: 'info',
   }),
   bundler: {
-    transpilePackages: ['@monorepo/bar']
+    transpilePackages: ['@monorepo/bar', '@monorepo/bar/otherthing']
   }
 });

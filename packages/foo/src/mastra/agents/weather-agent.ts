@@ -4,11 +4,12 @@ import { Memory } from '@mastra/memory';
 import { LibSQLStore } from '@mastra/libsql';
 import { weatherTool } from '../tools';
 import { NAME, OTHER_NAME } from '@monorepo/bar';
+import { YET_ANOTHER_NAME } from '@monorepo/bar/otherthing'; 
 
 export const weatherAgent = new Agent({
   name: 'Weather Agent',
   instructions: `
-      You are a helpful weather assistant that provides accurate weather information and can help planning activities based on the weather. ${NAME} ${OTHER_NAME}
+      You are a helpful weather assistant that provides accurate weather information and can help planning activities based on the weather. ${NAME} ${OTHER_NAME} ${YET_ANOTHER_NAME}
 
       Your primary function is to help users get weather details for specific locations. When responding:
       - Always ask for a location if none is provided
